@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/primaryBackgroundColor"
+    tools:context="com.jlb.jinliangbao.HomeActivity">
+
+    <!-- ActionBar -->
+    <com.jlb.jinliangbao.diyview.TitleLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:IsHideLeftBtn="true"
+        app:CenterText="金粮宝"
+        app:RightText="登录"></com.jlb.jinliangbao.diyview.TitleLayout>
+
+    <!-- ViewPager -->
+    <LinearLayout
+        android:id="@+id/viewpager_lin"
+        android:layout_below="@id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <include layout="@layout/home_viewpager"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tuijian_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="粮食业流动需求资金200万元"
+            android:textSize="16sp"
+            android:layout_marginLeft="18dp"
+            android:textColor="#4c4d4f"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="荐"
+            android:layout_marginRight="18dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@drawable/home_icon"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/arc_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.jlb.jinliangbao.diyview.RingView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:padding="10dp"
+            app:percent="70"
+            app:percentTextSize="80"
+            app:numberOfPeople="300"
+            app:numberOfPeopleTextSize="20"
+            app:overlayColor="#FC4C4E"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nll_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#656364"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/qx_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="|"/>
+        <TextView
+            android:id="@+id/qg_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="|"/>
+        <TextView
+            android:id="@+id/sy_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"/>
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_arc"
+        android:textColor="@color/primaryBtnTextColor"
+        android:textSize="22sp"
+        android:text="立即投资"/>
+
+</LinearLayout>

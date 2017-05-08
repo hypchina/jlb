@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.jlb.jinliangbao.HomeActivity">
+
+    <com.jlb.jinliangbao.diyview.TitleLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:IsHideLeftBtn="true"
+        app:CenterText="金粮宝"
+        app:RightText="登录"></com.jlb.jinliangbao.diyview.TitleLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/viewpager_lin"
+            android:layout_below="@id/titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <include layout="@layout/home_viewpager"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tuijian_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="粮食业流动需求资金200万元"
+                android:textSize="16sp"
+                android:layout_marginLeft="18dp"
+                android:textColor="#4c4d4f"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="荐"
+                android:layout_marginRight="18dp"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="@drawable/home_icon"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/arc_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.jlb.jinliangbao.diyview.RingView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:padding="10dp"
+                app:percent="70"
+                app:percentTextSize="80"
+                app:numberOfPeople="300"
+                app:numberOfPeopleTextSize="20"
+                app:overlayColor="#FC4C4E"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nll_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#656364"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/text_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/qixian_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="#b99c36"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:text="|"/>
+
+            <TextView
+                android:id="@+id/qigou_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="#b99c36"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:text="|"/>
+            <TextView
+                android:id="@+id/shengyu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_below="@id/text_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/btn_arc"
+            android:gravity="center"
+            android:textColor="#ffb"
+            android:textSize="20dp"
+            android:text="立即投资"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<include layout="@layout/navigation"/>-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

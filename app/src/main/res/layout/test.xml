@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <EditText
+        android:layout_margin="20dp"
+        android:background="@drawable/more_item_border_double"
+
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="dsafdadfas"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/jia_backgroud"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:background="@drawable/more_item_border_double"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/investment_jian"
+            />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/app_name"
+            android:background="@drawable/user_btn_arc_white"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="navTextColor">#9b9b9b</color>
+    <color name="navTabBackgroudColor">#FFF</color>
+    <color name="primaryBtnColor">#b99c36</color>
+    <color name="primaryBtnTextColor">#fff</color>
+    <color name="primaryBackgroundColor">#fff</color>
+    <color name="moreTextColor">#6a6a6a</color>
+    <color name="moreListItemBorderColor">#d2d2d2</color>
+    <color name="userRedBtn">#fd5e34</color>
+    <color name="userBlueBtn">#00adea</color>
+    <color name="arcGrayBtn">#c8c4c5</color>
+</resources>

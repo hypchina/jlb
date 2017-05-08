@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.jlb.jinliangbao.LoginActivity"
+    android:background="#FFF">
+
+    <FrameLayout
+        android:id="@+id/login_bg_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_bg">
+        <com.jlb.jinliangbao.diyview.TitleLayout
+            app:CenterText="登录"
+            app:RightText="注册"
+            app:IsHideLeftBtn="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.jlb.jinliangbao.diyview.TitleLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/user_name_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/login_bg_title">
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:elegantTextHeight="true"
+            android:hint="请输入用户名/手机号"
+            android:textColorHint="#696969"
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/login_icon_1"
+            android:maxLines="1"
+            android:theme="@style/LoginEditViewTheme"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/user_pass_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/user_name_lin">
+        <EditText
+            android:id="@+id/user_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:elegantTextHeight="true"
+            android:inputType="textPassword"
+            android:hint="请输入您的密码"
+            android:textColorHint="#696969"
+            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/login_icon_2"
+            android:drawableRight="@drawable/login_eyes2"
+            android:maxLines="1"
+            android:theme="@style/LoginEditViewTheme"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/forget_pass_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_pass_lin"
+        android:layout_marginTop="16dp"
+        android:gravity="right|center_vertical">
+        <TextView
+            android:id="@+id/forget_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:text="忘记密码"
+            android:textSize="11sp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56.5dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:text="登录"
+        android:textColor="#fff"
+        android:background="#B99C36"
+        android:layout_below="@id/forget_pass_lin"/>
+
+</RelativeLayout>

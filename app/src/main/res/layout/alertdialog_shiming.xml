@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="260dp"
+    android:layout_height="100dp"
+    android:background="@drawable/arc_white"
+    android:gravity="center">
+
+    <TextView
+        android:padding="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        android:text="实名身份证信息还有X天将过期，过期后账户不能正常使用，请及时提交新的实名信息。"/>
+
+    <LinearLayout
+        android:background="#d0d0d0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@drawable/user_btn_red_arc"
+            android:textColor="@color/primaryBackgroundColor"
+            android:text="实名提交"/>
+
+        <Button
+            android:id="@+id/no"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="@color/primaryBackgroundColor"
+            android:background="@drawable/btn_arc_gray"
+            android:text="暂不提交"/>
+    </LinearLayout>
+
+</LinearLayout>

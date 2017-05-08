@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleLayout">
+        <attr name="LeftText" format="string"></attr>
+        <attr name="CenterText" format="string"></attr>
+        <attr name="RightText" format="string"></attr>
+        <attr name="IsHideLeftBtn" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ViewPagerLayout">
+        <attr name="DotColor" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="RingView">
+        <attr name="startAngle" format="integer"></attr>
+        <attr name="sweepAngle" format="integer"></attr>
+        <attr name="startColor" format="string"></attr>
+        <attr name="overlayColor" format="string"></attr>
+        <attr name="percent" format="integer"></attr>
+        <attr name="percentTextSize" format="integer"></attr>
+        <attr name="symbol" format="string"></attr>
+        <attr name="numberOfPeople" format="integer"></attr>
+        <attr name="numberOfPeopleTextSize" format="integer"></attr>
+    </declare-styleable>
+</resources>
